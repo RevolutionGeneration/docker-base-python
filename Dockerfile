@@ -84,9 +84,8 @@ RUN cd /usr/local/bin \
 	&& ln -s idle3 idle \
 	&& ln -s pydoc3 pydoc \
 	&& ln -s python3 python \
-	&& ln -s python3-config python-config
+	&& ln -s python3-config python-config \
+	&& pip install -U setuptools
 
 CMD ["python3"]
-
-CMD service cron start && tail -F /var/log/syslog
 
