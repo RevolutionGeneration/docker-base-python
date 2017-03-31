@@ -7,6 +7,8 @@ ENV PATH /usr/local/bin:$PATH
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		ca-certificates \
 		libgdbm3 \
+		build-essential \
+		libffi-dev \
 		libsqlite3-0 \
 		libssl1.0.0 \
 	&& rm -rf /var/lib/apt/lists/*
