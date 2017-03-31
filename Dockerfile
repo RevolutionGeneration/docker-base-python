@@ -4,7 +4,7 @@ FROM revgen/docker-base:latest
 ENV PATH /usr/local/bin:$PATH
 
 # runtime dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y \
 		ca-certificates \
 		libgdbm3 \
 		build-essential \
